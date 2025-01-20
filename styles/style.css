@@ -357,6 +357,7 @@ img {
     -moz-transition: top 0.4s;
     -ms-transition: top 0.4s;
     -o-transition: top 0.4s;
+    justify-content: center;
 }
 
 .login__form{
@@ -950,16 +951,17 @@ width: 170px;
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .container{
-        margin-inline: 1rem;
+        margin-inline: .5rem;
     }
 
     .nav__menu{
         padding-inline: 3rem;
     }
-    
-    .discount__imag-1,.discount__imag-2{
+
+    .discount__imag-1,
+    .discount__imag-2{
         width: 140px;
     }
 
@@ -1003,6 +1005,7 @@ width: 170px;
     .login__form{
         width: 400px;
         justify-content: center;
+        align-items: center;
     }
 
     .close{
@@ -1216,9 +1219,9 @@ width: 170px;
 }
 
 @media screen and (min-width: 1220px) {
-    .container {
+    /* .container {
         margin-inline: auto;
-    }
+    } */
 
     .home__container {
         grid-template-columns: 435px 745px;
